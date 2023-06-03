@@ -4,3 +4,4 @@ selenium
 requests
 openai
 undetected_chromedriver
+gradio

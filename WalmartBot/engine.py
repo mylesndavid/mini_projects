@@ -84,8 +84,9 @@ def shoppingList(shopping_list):
     df = pd.DataFrame(columns=['Item','Price','Location'])
 
     for object in list_of_locations:
-        df2 = {'Item': object.name, 'Price': object.price, 'Location': object.location}
-        df = df.append(df2, ignore_index=True)
+        df2 = pd.DataFrame([{'Item': object.name, 'Price': object.price, 'Location': object.location}])
+        df = pd.concat([df,df2], ignore_index=True)
+        #df = df.append(df2, ignore_index=True)
 
     df = df.sort_values('Location')
 

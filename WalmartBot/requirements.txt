@@ -1,0 +1,6 @@
+bs4
+pandas
+selenium
+requests
+openai
+undetected_chromedriver
